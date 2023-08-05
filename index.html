@@ -5,46 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asim Jofa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./assests/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/index.css">
   </head>
   <body>
-      <p class="text-center bg-dark text-white top-head">Festive Pret is live. <span style="font-weight: bold;"><a class="text-decoration-none text-white"href="">Shop</a> </span>Your Favourites Now!</p>
+      <p class="text-center bg-black text-white top-head">Festive Pret is live. <span style="font-weight: bold;"><a class="text-decoration-none text-white"href="">Shop</a> </span>Your Favourites Now!</p>
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="./assests/Logo.webp" style="margin-left: 1%;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav mb-2 mb-lg-0 mt-3 ms-5 text-black">
+            <li class="nav-item" id="nav1">
+              <a class="nav-link" aria-current="page" href="#">NEW IN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">UNSTITCHED</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#">READY TO WEAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AJ ESSEENTIALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHOP BY FABRIC</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex ms-auto mt-3" id="searchform" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search" id="searchbox">
+            <button class="btn btn-outline" type="submit" id="button"><i class="bi bi-search-heart"></i></button>
           </form>
+          <i class="bi bi-person-fill mt-3 ms-auto" style="font-size: 20px; padding-right: 20px;"></i>
+          <i class="bi bi-truck mt-3" style="font-size: 20px; padding-right: 20px;"></i>
+          <i class="bi bi-heart-fill mt-3" style="font-size: 18px; padding-right: 20px;"></i>
+          <i class="bi bi-bag-check-fill mt-3" style="font-size: 18px; padding-right: 15px;"></i>
+          
         </div>
       </div>
     </nav>
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+      <div class="carousel-indicators">
+        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+                  <img src="./assests/Main-image1.jpg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h5 class="animated fadeInDown" style="animation-delay: 1s">New Designs For You</h5>
+            <p class="animated fadeInUp " style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+            <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./appointment.html">Order Now</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+                  <img src="./assests/Main-image5.jpg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h5 class="animated fadeInDown" style="animation-delay: 1s">Linen Designs</h5>
+            <p class="animated fadeInUp" style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+            <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./appointment.html">Order Now</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+                  <img src="./assests/Main-image4.webp" class="d-block w-100">
+          <div class="carousel-caption">
+            <h5 class="animated fadeInDown" style="animation-delay: 1s">Summer Fashion</h5>
+            <p class="animated fadeInUp" style="animation-delay: 2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quis esse quidem fugiat cum.</p>
+            <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./appointment.html">Order Now</a></p>
+          </div>
+        </div>
+      </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="row mt-4" style="z-index: 1;">
+          <div class="col">
+            <h1 class="mt-5">WHAT's</h1>
+            <h1 style="padding-left: 20px;">NEW</h1>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
     
 
 
